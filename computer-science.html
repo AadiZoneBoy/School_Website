@@ -1,58 +1,162 @@
-<!--Computer-science.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer-science</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Science | Bidhan Chandra College</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #07f6da;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2, h3 {
+      color: #003366;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Computer-science</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Course Description</h2>
-            <h3>Regular Cources</h3>
-            <p><b>sl.1</b></p>
-         <p>4-year B.sc (H/H & R.) in Computer-science.</p>
-            <p><b>sl.2</b></p>
-        <p>3-year B.sc Multidisciplinary</p>
-        </section>
- <br><br><br><br>
-        <h3>Add-on Cources</h3>
-        <p><b>sl.1</b></p>
-        <b>Seassion :2023-2024</b>
-        <p>Skill Development Cources in Advanced Computer Fundamental And Office Management.</p>
-        <p><b>sl.2</b></p>
-        <b>Seassion :2021-2022</b>
-        <p>Computer Fundamental And Office Management.</p>
-<br><br><br><br>
-        <section>
-            <h3>About</h3>
-            <p>The department was founded in 2003, initially offering a three-year General course in Computer Science. However, starting from 2009, the department started offering both three-year Honours and General courses in Computer Science.
 
-                From academic year 2018-2019. the department introduced semester-wise programs, including a three-year B.Sc. Honours in Computer Science and a three-year B.Sc. General with Computer Science as a subject.
-                
-                From the session 2023-2024 the department offers Semester-wise 4-year B.Sc. (Honours/Honours with Research) in Computer Science and Semester-wise 3 year B.Sc. (Multidisciplinary Courses) with Computer Science as a subject
-                
-                The department consistently achieves a significant number of first-class distinctions in Computer Science Honours in the final examinations conducted by the University of Calcutta every year.
-                
-                Laboratory:
-                
-                Our department proudly features two computer software laboratories and one hardware. laboratory, all equipped with air conditioning. The first software labi accommodates 20 computers. while the second one has 11 computers. Additionally, there is a classroom with 10 computers dedicated to student practice sessions, bringing the total count of computers in the department to 41. The software laboratories are utilized by multiple departments, including Geography, Mathematics. Physics. Electronics, and Commerce, each equipped with a projector setup and high- speed internet conriection (100 Mbps). These ICT tools greatly aid in both theory and practical classes, enhancing students' comprehension. The hardware laboratory is fully equipped for Analog & Digital Electronics, Telecommunication, and Microprocessor & Microcontroller practicals, serving both Computer Science (Honours and General) and Electronics (General) students</p>
-        </section>
-<br><br><br><br>
-        <section>
-            <h2>Teachers</h2>
-            <ul>
-                <li>Mr. Unmesh Mandal</li>
-                <li>Mr. Gautam Das</li>
-                <li>Mrs. Rimpi Saha </li>
-                <li>Mr. Apurba Jyoti Roy</li>
-            </ul>
-        </section>
-    </main>
+  <header>
+    <h1>Computer Science Department</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>📚 Course Description</h2>
+      <h3>🎓 Regular Courses</h3>
+      <ul>
+        <li><strong>Sl. 1:</strong> 4-year B.Sc (Hons. / Hons. with Research) in Computer Science</li>
+        <li><strong>Sl. 2:</strong> 3-year B.Sc Multidisciplinary</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>💡 Add-on Courses</h3>
+      <ul>
+        <li><strong>Session: 2023–2024</strong> – Skill Development in Advanced Computer Fundamentals & Office Management</li>
+        <li><strong>Session: 2021–2022</strong> – Computer Fundamentals & Office Management</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🏛️ About the Department</h2>
+      <p>The Department of Computer Science was established in <strong>2003</strong>, initially offering a three-year General course. In <strong>2009</strong>, it expanded to include Honours courses.</p>
+      <p>From the academic session <strong>2018–2019</strong>, the department introduced semester-wise B.Sc. Honours and General programs. Starting <strong>2023–2024</strong>, it now offers:</p>
+      <ul>
+        <li>4-year B.Sc. (Hons. / Hons. with Research)</li>
+        <li>3-year B.Sc. (Multidisciplinary) with Computer Science as a subject</li>
+      </ul>
+      <p>The department consistently achieves numerous first-class results in CU final exams for Computer Science Honours.</p>
+    </section>
+
+    <section>
+      <h2>🖥️ Laboratory Facilities</h2>
+      <p>The department has:</p>
+      <ul>
+        <li><strong>2 Air-Conditioned Software Labs:</strong> Lab 1 with 20 computers, Lab 2 with 11 computers</li>
+        <li><strong>1 Hardware Lab:</strong> For practicals in Analog & Digital Electronics, Telecom, Microprocessors & Microcontrollers</li>
+        <li><strong>1 Classroom Lab:</strong> With 10 additional computers</li>
+      </ul>
+      <p>Total computers available: <strong>41</strong>. These labs serve students of Computer Science, Mathematics, Geography, Electronics, Physics, and Commerce. Each lab is equipped with projectors and <strong>100 Mbps</strong> high-speed internet.</p>
+      <p>ICT-enabled tools significantly enhance theory and practical learning experiences.</p>
+    </section>
+
+    <section>
+      <h2>👨‍🏫 Faculty Members</h2>
+      <ul>
+        <li>Mr. Unmesh Mandal</li>
+        <li>Mr. Gautam Das</li>
+        <li>Mrs. Rimpi Saha</li>
+        <li>Mr. Apurba Jyoti Roy</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bidhan Chandra College. All rights reserved — Aaditya Singh</p>
+  </footer>
+
 </body>
 </html>

@@ -1,180 +1,111 @@
-/* Global Styles */
+/* styles.css */
 
-* {
-    box-sizing: border-box;
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2; /* Light grey background */
-    margin: 0;
-    padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333; /* Dark background for header */
-    color: #fff;
-    padding: 10px 0;
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-content {
+.logo-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: center;
+    gap: 15px;
 }
 
-header h1 {
-    margin: 0;
+.logo {
+    height: 60px;
+    width: auto;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
     text-decoration: none;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
 }
 
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    padding: 30px 10%;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+section.hero {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-  
-  /* Homepage Styles */
-  
-  .homepage {
-    
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .homepage h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .homepage p {
+.principal-img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+section.overview {
+    margin-top: 40px;
+    line-height: 1.7;
+}
+
+/* Footer styles */
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
     font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  /* Academics Page Styles */
-  
-  .academics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .academics section {
-    margin: 20px;
-    width: calc(33.33% - 20px);
-  }
-  
-  .academics h2 {
-    margin-bottom: 20px;
-  }
-  
-  .academics ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .academics li {
-    margin-bottom: 10px;
-  }
-  
-  .academics a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .academics a:hover {
-    color: #23527c;
-  }
-  
-  /* Course Page Styles */
-  
-  .course {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-  }
-  
-  .course h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .course section {
-    background-color: #fff;
-    padding: 1em;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .course h2 {
-    margin-bottom: 10px;
-  }
-  
-  .course p {
-    margin-bottom: 20px;
-  }
-  
-  .course ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .course li {
-    margin-bottom: 10px;
-  }
-  
-  .course a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .course a:hover {
-    color: #23527c;
-  }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-    }
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Typing effect */
+.typing-text {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}

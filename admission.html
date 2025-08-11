@@ -1,172 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admission Form</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        margin: 20px;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-    .form-container {
-        max-width: 600px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        margin: 0 auto;
-    }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    input[type="text"], input[type="email"], select {
-        width: 100%;
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form | Bidhan Chandra College</title>
 
-    header {
-    background-color: #333; /* Dark background for header */
-    color: #fff;
-    padding: 10px 0;
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-header h1 {
-    margin: 0;
-    color: #07f6da;
-}
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        header h1 {
+            margin: 0;
+            color: #07f6da;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        header h3 {
+            margin: 5px 0;
+            font-weight: normal;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-</style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .form-container {
+            max-width: 700px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #003366;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #003366;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #045b8f;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container p {
+            margin: 0;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Bidhan Chandra College</h1>
-        <h3>Fill The Admission Form... </h3>
+        <h3>Fill the Admission Form</h3>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="academics.html">Academics</a></li>
                 <li><a href="admission.html">Admission</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
     </header>
-<br>
-<div class="form-container">
-    <h1>Admission Form</h1>
-    <form action="#" method="post">
-        <div class="form-group">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+
+    <div class="form-container">
+        <h1>Admission Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select Gender --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Full Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="course">Course Interested In:</label>
+                <input type="text" id="course" name="course" required />
+            </div>
+            <div class="form-group">
+                <label for="qualification">Highest Qualification:</label>
+                <input type="text" id="qualification" name="qualification" required />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application" />
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bidhan Chandra College. Developed by Aaditya Singh.</p>
         </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
-        <div class="form-group">
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="course">Course Interested In:</label>
-            <input type="text" id="course" name="course" required>
-        </div>
-        <div class="form-group">
-            <label for="qualification">Highest Qualification:</label>
-            <input type="text" id="qualification" name="qualification" required>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-</div>
+    </footer>
 
 </body>
-<br><br>
-<br><br>
-<footer>
-    <div class="container">
-        <p>&copy; 2024 College websites of Bidhan chandra college. All rights reserved---Aaditya singh.</p>
-    </div>
-</footer>
 </html>

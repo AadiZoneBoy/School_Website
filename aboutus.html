@@ -1,131 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f2f2f2; /* Light grey background */
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Bidhan Chandra College</title>
 
-        header {
-            background-color: #333; /* Dark background for header */
-            color: #fff;
-            padding: 10px 0;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-        header h1 {
-            margin: 0;
-        }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+    header h1 {
+      margin: 5px 0;
+      color: #07f6da;
+    }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-        main {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        /* About Us Page Specific Styles */
-        .about-us {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    h2 {
+      color: #003366;
+      margin-top: 0;
+    }
 
-        .about-us h2 {
-            margin-top: 0;
-        }
+    section {
+      margin-bottom: 40px;
+    }
 
-        .about-us p {
-            line-height: 1.8;
-        }
-    </style>
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>bidhan Chandra College</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="academics.html">Academics</a></li>
-                    <li><a href="admission.html">Admission</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
-        <section class="about-us">
-            <h2>About Bidhan chandra college</h2>
-            <p>Bidhan Chandra College, Rishra, affiliated to the University of Calcatta, is situated in the heart of the industrial belt in the Serampore Sub-Division of Hooghly District in W.B. It was established in 1957 after the name of illustrious Dr. Bidhan Chandra Roy, the then Chief Minister and architect of modern West Bengal. The college owes its existence to the munificient charity of Birkmyre Education Trust as also to the well wishers of the college like Late Shribhusan Bose, Late Pannalal Mukherjee, Late Principal Kanai Lal Ganguly and others who made laudable efforts in its making.
 
-                The in-campus setting of the institution immediately nullifies the din and bustle of the busy G.T. Road and its surrounding. The moment one crosses the main entrance of the college, it becomes impossible for him or her to fight shy of the refreshing ambience-an ambience with a panoramic view of the holy Bhagirathi with a strand line stretching over around hundred meters covered with amazing lush foliage which virtually transforms the campus into an emerald idyllic aura.
-                
-                The intermingling of students of various shades of classes, castes and communities and of various languages, religions and cultures coming from Rishra and adjancent localities, even from distant rural areas, helps to develop a healthy broad culture in the campus life.
-                
-                Moreover, the notable features of the institution is the influx of a large number of the first generation learners and some of them have shown outstanding performances in their respective professional lives.
-                
-                Aim and Objective
-                
-                The aim of the institution is to impart sound education by developing in the students habits of piety, accountability, discipline and self-reliance during the year of their studies.
-                
-                The objective of this institution is to hone the academic and extra-academic potential of the students enabling them to cope with unforeseeable future of their lives.
-                
-                Mission and Motto
-                
-                The mission of the institution is to develop among the students, coming up from different caste, creed and culture, a harmonious and integrated personality and a sense of cosmopolitanism thereby reflecting a collective ethos of our nation.
-                
-                The emblem of the college, printed on the front cover of the prospectus, has sincerely been selected to represent the motto of the college. The earthen flaming-torch on a dark backdrop symbolises an endeavour to make a journey from the darkness of ignorance to the light of knowledge and wisdom (Tamso Maa Jyotirgmaya).</p>
-        </section>
-    </main>
+  <header>
+    <h1>Bidhan Chandra College</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Bidhan Chandra College</h2>
+      <p>
+        Bidhan Chandra College, Rishra, affiliated with the University of Calcutta, is located in the heart of the industrial belt in the Serampore Sub-Division of Hooghly District, West Bengal. Established in 1957 and named after the eminent Dr. Bidhan Chandra Roy, the college was founded with the support of the Birkmyre Education Trust and contributions from dedicated individuals like Late Shribhusan Bose, Late Pannalal Mukherjee, and Late Principal Kanai Lal Ganguly.
+      </p>
+      <p>
+        The serene college campus offers a refreshing escape from the noise of G.T. Road, with a picturesque view of the holy Bhagirathi River and lush greenery along its strand. The diverse student community, comprising various castes, communities, and cultural backgrounds, fosters a broad, inclusive, and vibrant campus life.
+      </p>
+      <p>
+        Notably, the college attracts a significant number of first-generation learners—many of whom have gone on to achieve remarkable success in their careers.
+      </p>
+    </section>
+
+    <section>
+      <h2>Aim & Objective</h2>
+      <p>
+        The primary aim of the institution is to provide quality education while nurturing habits of discipline, self-reliance, and accountability among students. The objective is to refine both academic and co-curricular talents, preparing students for a dynamic and unpredictable future.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mission & Motto</h2>
+      <p>
+        Our mission is to promote an integrated and harmonious personality among students from all walks of life, fostering a cosmopolitan and inclusive spirit. The college emblem, depicting an earthen flaming torch on a dark background, symbolizes our motto:
+        <em>“Tamaso Maa Jyotirgamaya”</em> — From darkness to light.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bidhan Chandra College. All rights reserved — Developed by Aaditya Singh.</p>
+  </footer>
+
 </body>
-<br><br><br><br>
-<footer>
-    <p>&copy; 2024 College websites of Bidhan chandra college. All rights reserved---Aaditya singh.</p>
-</footer>
 </html>

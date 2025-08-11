@@ -1,58 +1,187 @@
-<!-- academics.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academics | Bidhan Chandra College</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 5px 0;
+      color: #07f6da;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 40px 10%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    section h3 {
+      margin-top: 20px;
+      color: #045b8f;
+      font-size: 22px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul > li {
+      margin-bottom: 10px;
+    }
+
+    ul ul {
+      padding-left: 20px;
+    }
+
+    ul ul li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #003366;
+    }
+
+    a:hover {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main {
+        padding: 30px 5%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header> 
-        <h1>Bidhan Chandra College</h1>
-        <h1>Academics</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Departments</h2>
-            <ul>
-                <li>
-                    <h3>Arts</h3>
-                    <ul>
-                        <li><a href="english.html">English</a></li>
-                        <li><a href="history.html">History</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Science</h3>
-                    <ul>
-                        <li><a href="computer-science.html">Computer Science</a></li>
-                        <li><a href="mathematics.html">Mathematics</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Commerce</h3>
-                    <ul>
-                        <li><a href="Commerce Department(Day).html">Commerce Department(Day)</a></li>
-                        <li><a href="Commerce Department(Evening).html">Commerce Department (Evening)</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </main>
-</body>
-<footer>
+
+  <header>
+    <h1>Bidhan Chandra College</h1>
+    <h1>Academics</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2><i class="fas fa-graduation-cap"></i> Departments</h2>
+
+      <ul>
+        <li>
+          <h3><i class="fas fa-palette"></i> Arts</h3>
+          <ul>
+            <li><a href="english.html">English</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-flask"></i> Science</h3>
+          <ul>
+            <li><a href="computer-science.html">Computer Science</a></li>
+            <li><a href="mathematics.html">Mathematics</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-briefcase"></i> Commerce</h3>
+          <ul>
+            <li><a href="Commerce Department(Day).html">Commerce Department (Day)</a></li>
+            <li><a href="Commerce Department(Evening).html">Commerce Department (Evening)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
-        <p>&copy; 2024 College websites of Bidhan chandra college. All rights reserved---Aaditya singh.</p>
+      <p>&copy; 2024 Bidhan Chandra College. All rights reserved — Developed by Aaditya Singh.</p>
     </div>
-</footer>
+  </footer>
+
+</body>
 </html>
